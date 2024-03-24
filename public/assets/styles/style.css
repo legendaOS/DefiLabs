@@ -62,7 +62,6 @@ body {
 
 .page-wrapper {
     position: relative;
-    overflow: hidden;
     max-width: 1440px;
     margin: 0 auto;
     margin-top: 50px;
@@ -385,6 +384,7 @@ body {
     padding-top: 32px;
     padding-bottom: 32px;
     border-bottom: 1px solid rgba(139, 139, 139, 0.5);
+    align-items: center;
 }
 
 .services-item:first-child {
@@ -1040,13 +1040,14 @@ body {
 
     .header-wrapper {
         padding-left: 13px;
+        padding-right: 13px;
         align-items: center;
         gap: 14px;
     }
 
     .header-logo-wrapper {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
 
     .info-logo {
@@ -1077,12 +1078,13 @@ body {
     }
 
     .page-component {
-        margin-top: 0px;
+        margin-top: 75px;
         padding: 0px;
     }
 
     .info-content-wrapper {
         margin-top: 50px;
+        width: 100%;
     }
 
     .page-wrapper {
@@ -1092,10 +1094,12 @@ body {
 
     .info-content-second {
         margin: 0;
+        margin-left: 90.26px;
     }
 
     .info-content-third {
         margin: 0;
+        margin-left: 180px;
         flex-direction: column;
         gap: 30.31px;
     }
@@ -1106,13 +1110,57 @@ body {
 
     .info-content-third--mini_block-second {
         margin: 0;
+        line-height: 22.4px;
+        font-size: 14px;
+        align-self: flex-end;
+        max-width: 259px;
     }
 
-    .info-content-primary--small {
+    /* .info-content-third--mini_block{
+        align-self: flex-start;
+    } */
 
-        font-size: 14px;
-        line-height: 160%;
+    .header-navigation-title-mobile{
+        display: flex;
+    }
 
+    .info-content-buttons--wrapper{
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .info-content-button{
+        width: 348px;
+        height: 11px;
+        padding: 14px 0px 15px 0px;
+    }
+
+    .info-wrapper{
+        margin-top: 0px;
+    }
+
+    .page-component-title{
+        font-size: 32px;  
+        line-height: 30.4px; 
+    }
+
+    .services-item-number{
+        font-size: 12px;
+        line-height: 19.2px;
+    }
+
+    .services-item-content--title{
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    .services-item{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .ecosystem-card{
+        width: 100%;
     }
 
 }
