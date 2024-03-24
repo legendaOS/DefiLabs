@@ -23,12 +23,22 @@
         <div class="header-wrapper">
 
             <!-- Навигация лого -->
-            <div class="header-logo-wrapper">
-                <img src="./public/assets/img/D/Vector.svg" alt="" srcset="">
-                <img src="./public/assets/img/D/Vector-1.svg" alt="" srcset="">
-                <img src="./public/assets/img/D/Vector-2.svg" alt="" srcset="">
-            </div>
+            <img class="header-logo-wrapper" src="/public/assets/img/icons/BWlogo.svg">
+            
             <!-- END Навигация лого -->
+
+            <div class="header-navigation-title-mobile">
+                <h1>
+                    <span class="info-logo-primary">Definition</span>
+                    <span class="info-logo-active">Labs</span>
+                </h1>
+            </div>
+
+            <!-- навигация бургер -->
+            <div class="header-navigation-burger">
+                <img src="./public/assets/img/icons/burger.svg" alt="">
+            </div>
+            <!-- END навигация бургер -->
 
             <!-- Навигация панель -->
             <div class="header-navigation-wrapper">
@@ -661,7 +671,10 @@
         </div>
         <!-- END Cases -->
 
-        <!-- Бизнес -->
+    </div>
+
+    <!-- Бизнес -->
+    <div class="full-page full-page-business">
         <div class="business-wrapper">
 
             <!-- Заголовок компонента -->
@@ -741,9 +754,12 @@
             <!-- END Другие карточки -->
 
         </div>
-        <!-- END Бизнес -->
+    </div>
+    <!-- END Бизнес -->
 
-        <!-- Партнеры -->
+
+    <!-- Партнеры -->
+    <div class="full-page full-page-partners">
         <div class="partners-wrapper">
 
             <!-- Заголовок компонента -->
@@ -844,7 +860,7 @@
             <!-- END Заголовок компонента -->
 
             <!-- Квадратные карточки -->
-            <div class="swiper roundCardsSwiper">
+            <div class="swiper roundCardsSwiperReversed">
                 <div class="swiper-wrapper partners-round-cards-wrapper">
 
                     <!-- квадратная карточка -->
@@ -918,16 +934,19 @@
             <!-- END Квадратные карточки -->
 
 
-            
+
 
         </div>
-        <!-- END Партнеры -->
+    </div>
+    <!-- END Партнеры -->
+
+    <div class="page-wrapper">
 
         <!-- Команда -->
-        <div class="team-wrapper page-component" id = "knifed">
+        <div class="team-wrapper page-component" id="knifed">
 
             <!-- Заголовок компонента -->
-            <div class="page-component-title" >
+            <div class="page-component-title">
                 Our team
             </div>
             <!-- END Заголовок компонента -->
@@ -1216,7 +1235,7 @@
                 </div>
                 <!-- END карточка участника -->
 
-                
+
 
                 <!-- карточка участника -->
                 <div class="member-card">
@@ -1283,8 +1302,13 @@
         </div>
         <!-- END Остальные участники -->
 
+    </div>
+    <!-- END Страница обертка -->
+
+
+    <div class="full-page full-page-footer">
         <!-- Футер -->
-        <div class="footer-wrapper">
+        <div class="footer-wrapper ">
 
             <div class="page-component-title page-component-title--reversed">
                 Contact us
@@ -1334,9 +1358,10 @@
 
         </div>
         <!-- END Футер -->
-
     </div>
-    <!-- END Страница обертка -->
+
+
+
 
     <!-- Попап -->
     <div class="popup-wrapper popup-wrapper-disabled">
@@ -1353,22 +1378,22 @@
 
                 <div class="popup-form-tag">
                     <div class="popup-form-tag--title">Your name</div>
-                    <input class="popup-form-tag--input" type="text" id = "form-name" placeholder="Jake Jakson"/>
+                    <input class="popup-form-tag--input" type="text" id="form-name" placeholder="Jake Jakson" />
                 </div>
 
                 <div class="popup-form-tag">
                     <div class="popup-form-tag--title">E-mail*</div>
-                    <input class="popup-form-tag--input" type="text" id = "form-mail" placeholder="Jake Jakson"/>
+                    <input class="popup-form-tag--input" type="text" id="form-mail" placeholder="Jake Jakson" />
                 </div>
 
                 <div class="popup-form-tag">
                     <div class="popup-form-tag--title">Type of business*</div>
-                    <input class="popup-form-tag--input" type="text" id = "form-type" placeholder="Jake Jakson"/>
+                    <input class="popup-form-tag--input" type="text" id="form-type" placeholder="Jake Jakson" />
                 </div>
 
                 <div class="popup-form-tag">
                     <div class="popup-form-tag--title">Your message</div>
-                    <textarea class="popup-form-tag--input" id = "form-message"> </textarea>
+                    <textarea class="popup-form-tag--input" id="form-message"> </textarea>
                 </div>
 
                 <div class="popup-form-submit" id="popup-submit">
@@ -1406,6 +1431,17 @@
             autoplay: {
                 delay: 800,
                 pauseOnMouseEnter: true
+            },
+        });
+
+        var swiperRoundCardsReversed = new Swiper(".roundCardsSwiperReversed", {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 800,
+                pauseOnMouseEnter: true,
+                reverseDirection: true
             },
         });
     </script>

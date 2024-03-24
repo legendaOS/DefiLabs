@@ -66,8 +66,8 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     margin-top: 50px;
-    padding-left: 70px;
-    padding-right: 70px;
+    /* padding-left: 70px;
+    padding-right: 70px; */
 }
 
 .page-component {
@@ -89,7 +89,7 @@ body {
 }
 
 .header-wrapper {
-    padding: 0px 64px 0px 70px;
+    padding: 0px 54px 0px 70px;
     display: flex;
     justify-content: space-between;
 }
@@ -98,11 +98,6 @@ body {
     width: 59.71px;
     height: 59.71px;
     border-radius: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--background-color-secondary);
 }
 
 
@@ -131,12 +126,18 @@ body {
     margin-top: 140px;
 }
 
-.info-coins{
+.info-coins {
     width: 361px;
     height: 340.17px;
     position: absolute;
     right: -30px;
     top: 153px;
+}
+
+@media screen and (max-width: 1373px) {
+    .info-coins {
+        display: none;
+    }
 }
 
 .info-logo {
@@ -170,15 +171,15 @@ body {
     width: 627px;
 }
 
-.info-content-first{
+.info-content-first {
     font-family: 'Quanta Grotesk Thin';
 }
 
-.info-content-second{
+.info-content-second {
     font-family: 'Quanta Grotesk ExtraLight';
 }
 
-.info-content-third{
+.info-content-third {
     font-family: 'Quanta Grotesk Light';
 }
 
@@ -187,7 +188,7 @@ body {
 }
 
 .info-content-active--big {
-    
+
     font-style: normal;
     font-weight: 100;
     font-size: 96px;
@@ -196,7 +197,7 @@ body {
 }
 
 .info-content-primary--big {
-    
+
     font-style: normal;
     font-weight: 100;
     font-size: 96px;
@@ -682,7 +683,7 @@ body {
     color: #EDEDED;
 }
 
-#knifed{
+#knifed {
     margin-top: 100px;
 }
 
@@ -704,7 +705,8 @@ body {
 
 .partners-wrapper {
     background-color: var(--color-primary);
-    padding: 150px 70px 0px 70px;
+    padding: 150px 140px 0px 140px;
+    max-width: 1300px;
 }
 
 .partners-round-cards-wrapper {
@@ -879,7 +881,7 @@ body {
 
 }
 
-.popup-wrapper-disabled{
+.popup-wrapper-disabled {
     display: none !important;
 }
 
@@ -992,4 +994,121 @@ body {
     color: #0E19D7;
 
     cursor: pointer;
+}
+
+.full-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.full-page-business {
+    background-color: var(--background-color-super-active);
+}
+
+.full-page-footer {
+    background-color: var(--color-primary);
+}
+
+.full-page-partners {
+    background-color: var(--color-primary);
+}
+
+.header-navigation-burger {
+    display: none;
+}
+
+@media screen and (max-width:450.01px) {
+    .header-navigation-burger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-navigation-burger>img {
+        width: 22px;
+        height: 15px;
+    }
+
+    .header-navigation-wrapper {
+        display: none;
+    }
+
+    .header-wrapper {
+        padding-left: 13px;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .header-logo-wrapper {
+        width: 30px;
+        height: 30px;
+    }
+
+    .info-logo {
+        display: none;
+    }
+
+    .info-logo-primary,
+    .info-logo-active {
+        font-size: 24px;
+        line-height: 19.2px;
+    }
+
+    .header-navigation-title-mobile {
+        flex-grow: 1;
+    }
+
+    .info-content-img--wrapper {
+        display: none;
+    }
+
+    .info-content-first,
+    .info-content-second,
+    .info-content-third,
+    .info-content-active--big,
+    .info-content-primary--big {
+        font-size: 58.35px;
+        line-height: 55.44px;
+    }
+
+    .page-component {
+        margin-top: 0px;
+        padding: 0px;
+    }
+
+    .info-content-wrapper {
+        margin-top: 50px;
+    }
+
+    .page-wrapper {
+        margin-top: 32px;
+        padding: 0px 13px 0px 13px;
+    }
+
+    .info-content-second {
+        margin: 0;
+    }
+
+    .info-content-third {
+        margin: 0;
+        flex-direction: column;
+        gap: 30.31px;
+    }
+
+    .info-content {
+        justify-content: flex-start;
+    }
+
+    .info-content-third--mini_block-second {
+        margin: 0;
+    }
+
+    .info-content-primary--small {
+
+        font-size: 14px;
+        line-height: 160%;
+
+    }
+
 }
