@@ -1142,6 +1142,7 @@ body {
     .page-component-title{
         font-size: 32px;  
         line-height: 30.4px; 
+        margin-bottom: 35px;
     }
 
     .services-item-number{
@@ -1160,7 +1161,33 @@ body {
     }
 
     .ecosystem-card{
-        width: 100%;
+        width: 349px;
+    }
+
+    .ecosystem-card-image--wrapper{
+        height: 200px;
+    }
+
+    .ecosystem-card-content{
+        margin-top: 35px;
+        margin-bottom: 39px;
+    }
+
+    .ecosystem-card-content--title{
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    .ecosystem-card-content--text{
+        font-size: 14px;
+        line-height: 22.4px;
+    }
+
+    .ecosystem-card-anonce{
+        width: 98%;
+        top: 5px;
+        font-size: 18px;
+        line-height: 14.76px;
     }
 
 }

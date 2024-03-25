@@ -125,7 +125,7 @@
         <!-- END Инфо -->
 
         <!-- Экосистема -->
-        <div class="ecosystem-wrapper page-component">
+        <div class="ecosystem-wrapper page-component ecosystemMobileSwapper swiper">
 
             <!-- Заголовок компонента -->
             <div class="page-component-title">
@@ -1444,6 +1444,27 @@
                 reverseDirection: true
             },
         });
+
+        // мобильные свайперы
+        if(document.body.clientWidth < 450.01){
+            // ecosystem
+            document.querySelector('.ecosystem-cards-wrapper').classList.toggle('swiper-wrapper')
+            document.querySelector('.ecosystem-cards-wrapper').classList.toggle('ecosystem-cards-wrapper')
+            for(let card of document.querySelectorAll('.ecosystem-card')){
+                card.classList.toggle('swiper-slide')
+            }
+            document.querySelector('.ecosystem-wrapper').classList.toggle('ecosystem-wrapper')
+
+            var SwiperMobileEcosystem = new Swiper(".ecosystemMobileSwapper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            });
+
+            
+        }   
+
+        
     </script>
 
     <script src="./public/js/main.js"></script>
