@@ -553,6 +553,7 @@ html.no-scroll {
     padding-bottom: 32px;
     border-bottom: 1px solid rgba(139, 139, 139, 0.5);
     align-items: center;
+    cursor: pointer;
 }
 
 .services-item:first-child {

@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
     // раскрытие сервисов
-    const arrows = document.querySelectorAll('.services-item-arrow')
+    const arrows = document.querySelectorAll('.services-item')
     for (const arrow of arrows) {
         arrow.addEventListener('click', (event) => {
             const parent = event.target.parentNode
-            parent.classList.toggle('services-item--active')
+            arrow.classList.toggle('services-item--active')
         })
     }
 
