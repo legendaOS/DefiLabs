@@ -24,7 +24,7 @@
 
             <!-- Навигация лого -->
             <img class="header-logo-wrapper" src="/public/assets/img/icons/BWlogo.svg">
-            
+
             <!-- END Навигация лого -->
 
             <div class="header-navigation-title-mobile">
@@ -156,7 +156,6 @@
                         </span>
                     </div>
                     <!-- END Экосистема карточка контент -->
-
                 </a>
                 <!-- END Экосистема карточка -->
 
@@ -283,6 +282,15 @@
 
             </div>
             <!-- END Экосистема карточки -->
+
+            <!-- пагинация мобильного свайпера -->
+            <div class="mobile-pagination">
+                <div class="ecosystem-swiper-pagination swiper-pagination"></div>
+                <img src="/public/assets/img/icons/arrow_right.svg" alt="" srcset="">
+            </div>
+            <!-- END пагинация мобильного свайпера -->
+
+
 
         </div>
         <!-- END Экосистема -->
@@ -658,6 +666,13 @@
 
 
                 </div>
+
+                <!-- пагинация мобильного свайпера -->
+                <div class="mobile-pagination cases-mobile-pagination">
+                    <div class="cases-swiper-pagination swiper-pagination"></div>
+                    <img src="/public/assets/img/icons/arrow_right.svg" alt="" srcset="">
+                </div>
+                <!-- END пагинация мобильного свайпера -->
 
             </div>
 
@@ -1291,11 +1306,11 @@
             </div>
             <!-- END карточки участников закрытые -->
 
-            <div class="show-members-button">
+            <div class="show-members-button" class = "mobile-killed">
                 View all members
             </div>
 
-            <div class="cases-button-wrapper">
+            <div class="cases-button-wrapper mobile-killed">
                 <div class="button cases-button"> Get started </div>
             </div>
 
@@ -1415,56 +1430,108 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: "auto",
-            spaceBetween: 30,
-            mousewheel: {
-                enabled: true,
-                releaseOnEdges: true,
-            },
-        });
 
-        var swiperRoundCards = new Swiper(".roundCardsSwiper", {
-            slidesPerView: "auto",
-            spaceBetween: 20,
-            loop: true,
-            autoplay: {
-                delay: 800,
-                pauseOnMouseEnter: true
-            },
-        });
-
-        var swiperRoundCardsReversed = new Swiper(".roundCardsSwiperReversed", {
-            slidesPerView: "auto",
-            spaceBetween: 20,
-            loop: true,
-            autoplay: {
-                delay: 800,
-                pauseOnMouseEnter: true,
-                reverseDirection: true
-            },
-        });
 
         // мобильные свайперы
-        if(document.body.clientWidth < 450.01){
+        if (document.body.clientWidth < 450.01) {
             // ecosystem
             document.querySelector('.ecosystem-cards-wrapper').classList.toggle('swiper-wrapper')
             document.querySelector('.ecosystem-cards-wrapper').classList.toggle('ecosystem-cards-wrapper')
-            for(let card of document.querySelectorAll('.ecosystem-card')){
+            for (let card of document.querySelectorAll('.ecosystem-card')) {
                 card.classList.toggle('swiper-slide')
             }
             document.querySelector('.ecosystem-wrapper').classList.toggle('ecosystem-wrapper')
 
             var SwiperMobileEcosystem = new Swiper(".ecosystemMobileSwapper", {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                pagination: {
+                    el: ".ecosystem-swiper-pagination",
+                },
+            });
+
+            for (let elm of document.querySelectorAll('.cases-card')) {
+                elm.classList.remove('cases-card')
+                elm.classList.add('cases-card--mobile')
+            }
+
+
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                pagination: {
+                    el: ".cases-swiper-pagination",
+                },
+            });
+
+            // команда
+
+            document.querySelector('.team-wrapper').classList.add('swiper')
+            document.querySelector('.team-cards-wrapper').classList.add('swiper-wrapper')
+            document.querySelector('.team-cards-wrapper').classList.remove('team-cards-wrapper')
+            for(let elm of document.querySelectorAll('.team-card')){
+                elm.classList.add('swiper-slide')
+            }
+
+            var swiperTeam = new Swiper(".team-wrapper", {
+                slidesPerView: "auto",
+                spaceBetween: 10,
+            });
+
+            // остальные участники
+
+            document.querySelector('.member-wrapper').classList.add('swiper')
+            document.querySelector('.member-cards-wrapper').classList.add('swiper-wrapper')
+            document.querySelector('.member-cards-wrapper').classList.remove('member-cards-wrapper')
+            for(let elm of document.querySelectorAll('.member-card')){
+                elm.classList.add('swiper-slide')
+            }
+
+            var swiperPeoples = new Swiper(".member-wrapper", {
+                slidesPerView: "auto",
+                spaceBetween: 10,
+            });
+
+
+        }
+        else {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: "auto",
+                spaceBetween: 30,
+                mousewheel: {
+                    enabled: true,
+                    releaseOnEdges: true,
+                },
             });
 
             
-        }   
+        }
 
-        
+        // везде
+
+        var swiperRoundCards = new Swiper(".roundCardsSwiper", {
+                slidesPerView: "auto",
+                spaceBetween: 20,
+                loop: true,
+                autoplay: {
+                    delay: 800,
+                    pauseOnMouseEnter: true
+                },
+            });
+
+            var swiperRoundCardsReversed = new Swiper(".roundCardsSwiperReversed", {
+                slidesPerView: "auto",
+                spaceBetween: 20,
+                loop: true,
+                autoplay: {
+                    delay: 800,
+                    pauseOnMouseEnter: true,
+                    reverseDirection: true
+                },
+            });
+
+
     </script>
 
     <script src="./public/js/main.js"></script>

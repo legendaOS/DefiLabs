@@ -1018,11 +1018,49 @@ body {
     display: none;
 }
 
-.header-navigation-title-mobile{
+.header-navigation-title-mobile {
+    display: none;
+}
+
+.mobile-pagination {
     display: none;
 }
 
 @media screen and (max-width:450.01px) {
+
+    .mobile-pagination {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 38px;
+        z-index: 1;
+        width: calc(100% - 100px);
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #8B8B8B !important;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: transparent !important;
+        outline: 1px solid #8B8B8B;
+        width: 5px !important;
+        height: 5px !important;
+    }
+
+    .swiper-pagination-bullet:first-child {
+        margin-left: 0px !important;
+    }
+
+    .swiper-pagination {
+        width: 100px !important;
+        position: relative !important;
+        text-align: left !important;
+    }
+
     .header-navigation-burger {
         display: flex;
         justify-content: center;
@@ -1120,74 +1158,347 @@ body {
         align-self: flex-start;
     } */
 
-    .header-navigation-title-mobile{
+    .header-navigation-title-mobile {
         display: flex;
     }
 
-    .info-content-buttons--wrapper{
+    .info-content-buttons--wrapper {
         justify-content: center;
         margin-top: 50px;
     }
 
-    .info-content-button{
+    .info-content-button {
         width: 348px;
         height: 11px;
         padding: 14px 0px 15px 0px;
     }
 
-    .info-wrapper{
+    .info-wrapper {
         margin-top: 0px;
     }
 
-    .page-component-title{
-        font-size: 32px;  
-        line-height: 30.4px; 
+    .page-component-title {
+        font-size: 32px;
+        line-height: 30.4px;
         margin-bottom: 35px;
     }
 
-    .services-item-number{
+    .services-item-number {
         font-size: 12px;
         line-height: 19.2px;
     }
 
-    .services-item-content--title{
+    .services-item-content--title {
         font-size: 18px;
         line-height: 21.6px;
     }
 
-    .services-item{
+    .services-item {
         padding-top: 15px;
         padding-bottom: 15px;
     }
 
-    .ecosystem-card{
+    .ecosystem-card {
         width: 349px;
     }
 
-    .ecosystem-card-image--wrapper{
+    .ecosystem-card-image--wrapper {
         height: 200px;
     }
 
-    .ecosystem-card-content{
+    .ecosystem-card-content {
         margin-top: 35px;
-        margin-bottom: 39px;
+        margin-bottom: calc(39px + 38px);
+        gap: 15px;
     }
 
-    .ecosystem-card-content--title{
+    .ecosystem-card-content--title {
         font-size: 18px;
         line-height: 21.6px;
     }
 
-    .ecosystem-card-content--text{
+    .ecosystem-card-content--text {
         font-size: 14px;
         line-height: 22.4px;
     }
 
-    .ecosystem-card-anonce{
+    .ecosystem-card-anonce {
         width: 98%;
         top: 5px;
         font-size: 18px;
         line-height: 14.76px;
     }
 
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        top: 0px !important;
+    }
+
+    .cases-card--mobile {
+        height: calc(250px - 70px) !important;
+        background-color: var(--background-color-active);
+        padding: 35px 30px 35px 30px;
+        width: calc(100% - 60px) !important;
+        border-radius: 15px;
+    }
+
+    .cases-card-content--title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    .cases-card-content--text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22.4px;
+    }
+
+    .cases-card-date {
+        display: none;
+    }
+
+    .cases-button {
+        height: 40px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .cases-button-wrapper {
+        margin-top: 64px;
+        margin-bottom: 90px;
+    }
+
+    .business-white-wrapper {
+        flex-direction: column;
+    }
+
+    .business-white-card {
+        width: calc(100% - 20px);
+        align-items: flex-start;
+        padding-left: 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        height: auto;
+    }
+
+    .business-wrapper {
+        width: 100%;
+        padding-top: 35px;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 30px;
+        gap: 15px;
+    }
+
+    .business-white-card--title {
+        font-size: 32px;
+        line-height: 26.24px;
+    }
+
+    .business-white-card--text {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 18px;
+        line-height: 21.6px;
+        gap: 10px;
+    }
+
+    .business-white-card--link {
+        font-size: 18px;
+        line-height: 21.6px;
+        padding: 0px;
+    }
+
+    .business-white-card--secondary{
+        padding-left: 0px;
+        padding-left: 20px;
+    }
+
+    .business-cards-wrapper{
+        flex-direction: column;
+    }
+
+    .business-card{
+        width: calc(100% - 12px);
+        height: 92px;
+        outline: none;
+        border: 6px solid #EDEDED;
+    }
+
+    .business-card-secondary{
+        width: 100%;
+    }
+    
+    .business-card-content--title{
+        font-size: 32px;
+        line-height: 26.24px;
+    }
+
+    .business-card-content--text{
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    .business-card-content{
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .business-card-secondary{
+        border: none;
+    }
+
+    .business-card-secondary > img{
+        display: none;
+    }
+
+    .business-wrapper > .page-component-title{
+        margin-bottom: 15px;
+    }
+
+    .partners-wrapper{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .partners-round-cards-wrapper{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .partners-wrapper .page-component-title{
+        margin-left: 13px;
+        margin-top: 45px;
+        font-size: 32px;
+        line-height: 30.4px;
+    }
+
+    .roundCardsSwiperReversed{
+        margin-bottom: 35px;
+    }
+
+    #knifed{
+        margin-top: 0px;
+    }
+
+    .team-cards-wrapper{
+        display: block;
+    }
+
+    .team-card{
+        width: 170px !important;
+    }
+
+    .team-card-img{
+        width: 170px;
+        height: 200px;
+    }
+
+    .partners-round-card{
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .partners-round-card--img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .team-card-content--title{
+        font-size: 18px;
+        line-height: 21.6px;
+        margin-top: 20px;
+    }
+
+    .team-card-content--text{
+        font-size: 14px;
+        line-height: 22.4px;
+    }
+
+    .member-card{
+        width: 170px !important;
+        margin-bottom: 35px;
+    }
+
+    .member-card-img{
+        width: 170px;
+        height: 200px;
+    }
+
+    .show-members-button{
+        display: none;
+    }
+
+    .mobile-killed{
+        display: none;
+    }
+
+    .footer-wrapper{
+        padding: 40px 14px 70px 14px;
+        width: calc(100% - 28px);
+    }
+
+    .footer-wrapper > .page-component-title{
+        margin-bottom: 0px;
+    }
+
+    .contacts-wrapper{
+        margin-top: 35px;
+        flex-direction: column;
+    }
+
+    .contact-element-text{
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    .contact-element-link{
+        width: 156px;
+        height: 57px;
+        font-size: 16px;
+        line-height: 25.6px;
+    }
+
+    .contact-element{
+        width: auto;
+        height: auto;
+        padding: 10px 10px 10px 30px;
+        justify-content: space-between;
+    }
+
+    .contact-element-link > img{
+        display: none;
+    }
+
+    .popup {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .popup-title {
+        font-size: 24px;
+    }
+
+    .popup-form-tag--title {
+        font-size: 17px;
+    }
+
+    .popup-form-tag--input {
+        padding: 14px 20px 14px 20px;
+        font-size: 11px;
+    }
+
+    #form-message{
+        height: 15px;
+    }
+
+    .popup-form-submit{
+        height: 44px;
+        font-size: 16px;
+    }
 }
