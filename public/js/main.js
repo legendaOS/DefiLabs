@@ -26,6 +26,8 @@ async function sendMessage(text) {
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    
+
     // раскрытие сервисов
     const arrows = document.querySelectorAll('.services-item-arrow')
     for (const arrow of arrows) {
@@ -37,12 +39,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // раскрытие мемберов
     const buttonMembers = document.querySelector('.show-members-button')
-    const membersHidden = document.querySelector('.member-cards-wrapper--closed')
+    const membersHidden = document.querySelectorAll('.member-card--closed')
     let closed = true
     buttonMembers.addEventListener('click', () => {
-        membersHidden.classList.toggle('member-cards-wrapper--closed')
+
+        for(let memberBuffer of membersHidden){
+            memberBuffer.classList.toggle('member-card--closed')
+        }
+        
+
         closed = !closed
-        console.log(buttonMembers.innerHTML)
         if (closed) {
             buttonMembers.innerHTML = 'View all members'
         }
@@ -58,12 +64,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const name = document.querySelector('#form-name').value
         const mail = document.querySelector('#form-mail').value
         const type = document.querySelector('#form-type').value
+        const tag = document.querySelector('#form-tag').value
         const message = document.querySelector('#form-message').value
 
         const textOfTheMessage = `
 ИМЯ: ${name} 
 E-MAIL: ${mail} 
 ТИП БИЗНЕСА: ${type} 
+ТЕЛЕГРАМ ТЭГ: ${tag}
 СООБЩЕНИЕ: ${message}
 `
         if(canSend){
@@ -91,5 +99,17 @@ E-MAIL: ${mail}
             popupWrapper.classList.toggle('popup-wrapper-disabled')
         })
     }
+
+    // закрытие попапа меню и открытие
+
+    const popupHeader = document.querySelector('.header-navigation-wrapper')
+
+    document.querySelector('.header-navigation-burger').addEventListener('click', ()=>{
+        popupHeader.classList.toggle('header-navigation-wrapper--mobile_disabled')
+    })
+
+    document.querySelector('.header-popup-close').addEventListener('click', ()=>{
+        popupHeader.classList.toggle('header-navigation-wrapper--mobile_disabled')
+    })
 
 })

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="html" lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -41,11 +41,15 @@
             <!-- END навигация бургер -->
 
             <!-- Навигация панель -->
-            <div class="header-navigation-wrapper">
-                <a href="#" class="header-navigation-link">Ecosystem</a>
-                <a href="#" class="header-navigation-link">Partners</a>
-                <a href="#" class="header-navigation-link">Team</a>
-                <a href="#" class="header-navigation-link">Contacts</a>
+            <div class="header-navigation-wrapper header-navigation-wrapper--mobile_disabled">
+                <img class="popup-close header-popup-close" src="./public/assets/img/icons/close.svg" alt="">
+
+                <a href="#ecosystemLink" class="header-navigation-link header-navigation-link--first">Ecosystem</a>
+                <a href="#partnersLink" class="header-navigation-link">Partners</a>
+                <a href="#teamLink" class="header-navigation-link">Team</a>
+                <a href="#conactsLink" class="header-navigation-link">Contacts</a>
+
+                <div class="button info-content-button header-button">Get started</div>
             </div>
             <!-- END Навигация панель -->
 
@@ -69,12 +73,32 @@
 
                 <!-- Инфо контент картика -->
                 <div class="info-content-img--wrapper">
+                    <img src="/public/assets/img/surrus/surrusDefault.png" class="info-content-img" alt="">
+                    <div class="info-blur info-blur-1"></div>
+                    <div class="info-blur info-blur-2"></div>
+                    <div class="info-blur info-blur-3"></div>
+                    <div class="info-blur info-blur-4"></div>
+                    <div class="info-blur info-blur-5"></div>
+                    <div class="info-blur info-blur-6"></div>
+                    <div class="info-blur info-blur-7"></div>
+                    <div class="info-blur info-blur-8"></div>
+                    <div class="info-blur info-blur-9"></div>
 
+                    
                 </div>
                 <!-- END Инфо контент картика -->
 
                 <!-- Инфо контент обертка -->
                 <div class="info-content-wrapper">
+
+                    <img src="/public/assets/img/surrus/surrusMobile.png" class="surrusMobile" alt="" srcset="">
+
+                    <div class="info-blur info-blur-20"></div>
+                    <div class="info-blur info-blur-21"></div>
+                    <div class="info-blur info-blur-22"></div>
+                    <div class="info-blur info-blur-23"></div>
+                    <div class="info-blur info-blur-24"></div>
+                    <div class="info-blur info-blur-25"></div>
 
                     <div class="info-content-first">
                         <span class="info-content-active--big">De</span><span
@@ -127,8 +151,15 @@
         <!-- Экосистема -->
         <div class="ecosystem-wrapper page-component ecosystemMobileSwapper swiper">
 
+            <div class="info-blur info-blur-10"></div>
+            <div class="info-blur info-blur-11"></div>
+            <div class="info-blur info-blur-12"></div>
+            <div class="info-blur info-blur-13"></div>
+
+            <img src="/public/assets/img/surrus/surrusSecond.png" class="surrusSecond" alt="">
+
             <!-- Заголовок компонента -->
-            <div class="page-component-title">
+            <div class="page-component-title" id = "ecosystemLink">
                 Our ecosystem
             </div>
             <!-- END Заголовок компонента -->
@@ -169,7 +200,7 @@
                     <!-- END анонс -->
 
                     <!-- Экосистема карточка картинка -->
-                    <div class="ecosystem-card-image--wrapper ecosystem-card-image--wrapper-anounced">
+                    <div class="ecosystem-card-image--wrapper">
                         <div class="cosystem-card-image--blur"></div>
                         <img class="cosystem-card-image" alt="" srcset=""
                             src="./public/assets/img/ecosystem/anonce.png">
@@ -178,10 +209,9 @@
 
                     <!-- Экосистема карточка контент -->
                     <div class="ecosystem-card-content">
-                        <span class="ecosystem-card-content--title">Definition hack</span>
+                        <span class="ecosystem-card-content--title">Definition trade</span>
                         <span class="ecosystem-card-content--text">
-                            Lorem ipsum dolor sit amet consectetur.
-                            Magna ante purus scelerisque maecenas integer arcu erat. Id malesuada elementum.
+                            Lorem ipsum dolor sit amet consectetur. Aliquet suspendisse pellentesque purus amet fermentum ut sed dolor. 
                         </span>
                     </div>
                     <!-- END Экосистема карточка контент -->
@@ -199,7 +229,7 @@
                     <!-- END анонс -->
 
                     <!-- Экосистема карточка картинка -->
-                    <div class="ecosystem-card-image--wrapper ecosystem-card-image--wrapper-anounced">
+                    <div class="ecosystem-card-image--wrapper">
                         <div class="cosystem-card-image--blur"></div>
                         <img class="cosystem-card-image" alt="" srcset=""
                             src="./public/assets/img/ecosystem/anonce.png">
@@ -208,10 +238,9 @@
 
                     <!-- Экосистема карточка контент -->
                     <div class="ecosystem-card-content">
-                        <span class="ecosystem-card-content--title">Definition hack</span>
+                        <span class="ecosystem-card-content--title">Definition conf</span>
                         <span class="ecosystem-card-content--text">
-                            Lorem ipsum dolor sit amet consectetur.
-                            Magna ante purus scelerisque maecenas integer arcu erat. Id malesuada elementum.
+                            Lorem ipsum dolor sit amet consectetur. Pharetra cras in neque suspendisse eget.
                         </span>
                     </div>
                     <!-- END Экосистема карточка контент -->
@@ -229,7 +258,7 @@
                     <!-- END анонс -->
 
                     <!-- Экосистема карточка картинка -->
-                    <div class="ecosystem-card-image--wrapper ecosystem-card-image--wrapper-anounced">
+                    <div class="ecosystem-card-image--wrapper ">
                         <div class="cosystem-card-image--blur"></div>
                         <img class="cosystem-card-image" alt="" srcset=""
                             src="./public/assets/img/ecosystem/anonce.png">
@@ -238,10 +267,9 @@
 
                     <!-- Экосистема карточка контент -->
                     <div class="ecosystem-card-content">
-                        <span class="ecosystem-card-content--title">Definition hack</span>
+                        <span class="ecosystem-card-content--title">Definition X Oko</span>
                         <span class="ecosystem-card-content--text">
-                            Lorem ipsum dolor sit amet consectetur.
-                            Magna ante purus scelerisque maecenas integer arcu erat. Id malesuada elementum.
+                            Lorem ipsum dolor sit amet consectetur. Pharetra cras in neque suspendisse eget.
                         </span>
                     </div>
                     <!-- END Экосистема карточка контент -->
@@ -252,26 +280,19 @@
                 <!-- Экосистема карточка с анонсом -->
                 <a href="#" class="ecosystem-card">
 
-                    <!-- анонс -->
-                    <div class="ecosystem-card-anonce">
-                        <div>to be announced</div>
-                    </div>
-                    <!-- END анонс -->
-
                     <!-- Экосистема карточка картинка -->
-                    <div class="ecosystem-card-image--wrapper ecosystem-card-image--wrapper-anounced">
+                    <div class="ecosystem-card-image--wrapper">
                         <div class="cosystem-card-image--blur"></div>
                         <img class="cosystem-card-image" alt="" srcset=""
-                            src="./public/assets/img/ecosystem/anonce.png">
+                            src="./public/assets/img/ecosystem/site2.png">
                     </div>
                     <!-- END Экосистема карточка картинка -->
 
                     <!-- Экосистема карточка контент -->
                     <div class="ecosystem-card-content">
-                        <span class="ecosystem-card-content--title">Definition hack</span>
+                        <span class="ecosystem-card-content--title">Silikonovie dali</span>
                         <span class="ecosystem-card-content--text">
-                            Lorem ipsum dolor sit amet consectetur.
-                            Magna ante purus scelerisque maecenas integer arcu erat. Id malesuada elementum.
+                            Lorem ipsum dolor sit amet consectetur. Magna ante purus scelerisque maecenas integer arcu erat. Id malesuada.
                         </span>
                     </div>
                     <!-- END Экосистема карточка контент -->
@@ -316,20 +337,20 @@
 
                     <div class="services-item-content">
                         <div class="services-item-content--title">
-                            Technology
+                            Investments
                         </div>
                         <div class="services-item-content--content">
                             <div>
-
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
                                 Fundraising
                             </div>
                             <div>
-
-                                Fundraising
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Tokenomics
                             </div>
                             <div>
-
-                                Fundraising
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Road-shows
                             </div>
 
                         </div>
@@ -344,7 +365,7 @@
                 <div class="services-item">
 
                     <div class="services-item-number">
-                        01
+                        02
                     </div>
 
                     <div class="services-item-content">
@@ -353,16 +374,16 @@
                         </div>
                         <div class="services-item-content--content">
                             <div>
-
-                                Fundraising
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Outsourcing
                             </div>
                             <div>
-
-                                Fundraising
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Audit
                             </div>
                             <div>
-
-                                Fundraising
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                White-label solutions sourcing
                             </div>
 
                         </div>
@@ -377,25 +398,25 @@
                 <div class="services-item">
 
                     <div class="services-item-number">
-                        01
+                        03
                     </div>
 
                     <div class="services-item-content">
                         <div class="services-item-content--title">
-                            Technology
+                            Human Resources
                         </div>
                         <div class="services-item-content--content">
                             <div>
-
-                                Fundraising
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Evaluation
                             </div>
                             <div>
-
-                                Fundraising
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Hiring
                             </div>
                             <div>
-
-                                Fundraising
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Crypto/fiat pay-roll management
                             </div>
 
                         </div>
@@ -410,25 +431,234 @@
                 <div class="services-item">
 
                     <div class="services-item-number">
-                        01
+                        04
                     </div>
 
                     <div class="services-item-content">
                         <div class="services-item-content--title">
-                            Technology
+                            Marketing
                         </div>
                         <div class="services-item-content--content">
                             <div>
-
-                                Fundraising
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Go-to-market
                             </div>
                             <div>
-
-                                Fundraising
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Brand awareness
                             </div>
                             <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                PR
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                User acquisition
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Events
+                            </div>
 
-                                Fundraising
+                        </div>
+                    </div>
+
+                    <div class="services-item-arrow"></div>
+
+                </div>
+                <!-- END Список сервисов елемент актив -->
+
+                <!-- Список сервисов елемент актив-->
+                <div class="services-item">
+
+                    <div class="services-item-number">
+                        05
+                    </div>
+
+                    <div class="services-item-content">
+                        <div class="services-item-content--title">
+                            BD
+                        </div>
+                        <div class="services-item-content--content">
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Partnerships
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Sales
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Customer care
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Project management
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="services-item-arrow"></div>
+
+                </div>
+                <!-- END Список сервисов елемент актив -->
+
+                <!-- Список сервисов елемент актив-->
+                <div class="services-item">
+
+                    <div class="services-item-number">
+                        06
+                    </div>
+
+                    <div class="services-item-content">
+                        <div class="services-item-content--title">
+                            Research
+                        </div>
+                        <div class="services-item-content--content">
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Product research
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Process research 
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Structural research 
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Market Research 
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Competitors research
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="services-item-arrow"></div>
+
+                </div>
+                <!-- END Список сервисов елемент актив -->
+
+                <!-- Список сервисов елемент актив-->
+                <div class="services-item">
+
+                    <div class="services-item-number">
+                        07
+                    </div>
+
+                    <div class="services-item-content">
+                        <div class="services-item-content--title">
+                            Product
+                        </div>
+                        <div class="services-item-content--content">
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Modelling
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Product/market fit
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Development Strategy
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Expansion strategy
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="services-item-arrow"></div>
+
+                </div>
+                <!-- END Список сервисов елемент актив -->
+
+                <!-- Список сервисов елемент актив-->
+                <div class="services-item">
+
+                    <div class="services-item-number">
+                        08
+                    </div>
+
+                    <div class="services-item-content">
+                        <div class="services-item-content--title">
+                            Legal
+                        </div>
+                        <div class="services-item-content--content">
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Setup
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Terms & conditions
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Investments rounds
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Legal opinions
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Employment docs
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="services-item-arrow"></div>
+
+                </div>
+                <!-- END Список сервисов елемент актив -->
+
+                <!-- Список сервисов елемент актив-->
+                <div class="services-item">
+
+                    <div class="services-item-number">
+                        09
+                    </div>
+
+                    <div class="services-item-content">
+                        <div class="services-item-content--title">
+                            Audit & analytics
+                        </div>
+                        <div class="services-item-content--content">
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Internal efficiency
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                External efficiency
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Security
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Investigations
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                Fraud prevention
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/TOCHAMBA.svg" alt="">
+                                AML/KYC/KYB tools
                             </div>
 
                         </div>
@@ -501,11 +731,11 @@
                         <div class="cases-card-content">
 
                             <div class="cases-card-content--title">
-                                Market entry
+                                Lead generation 
                             </div>
 
                             <div class="cases-card-content--text">
-                                Metaverse quest project: Market entry into the CIS.
+                                Blockchain intelligence and KYC/AML service : Lead generation.
                             </div>
 
                         </div>
@@ -515,7 +745,7 @@
                         <div class="cases-card-date">
 
                             <div class="cases-card-date--number">
-                                01
+                                02
                             </div>
 
                             <div class="cases-card-date--year">
@@ -535,11 +765,11 @@
                         <div class="cases-card-content">
 
                             <div class="cases-card-content--title">
-                                Market entry
+                                Hackathons
                             </div>
 
                             <div class="cases-card-content--text">
-                                Metaverse quest project: Market entry into the CIS.
+                                From 2021 to 2023, we organized 5 hackathons in Moscow and Tbilisi, with over 2000 developers and 50+ partners participating.
                             </div>
 
                         </div>
@@ -549,7 +779,7 @@
                         <div class="cases-card-date">
 
                             <div class="cases-card-date--number">
-                                01
+                                03
                             </div>
 
                             <div class="cases-card-date--year">
@@ -569,11 +799,11 @@
                         <div class="cases-card-content">
 
                             <div class="cases-card-content--title">
-                                Market entry
+                                Strategy
                             </div>
 
                             <div class="cases-card-content--text">
-                                Metaverse quest project: Market entry into the CIS.
+                                Advising on creating a market entry strategy and expansion in Asia for a cryptocurrency exchange.
                             </div>
 
                         </div>
@@ -583,7 +813,7 @@
                         <div class="cases-card-date">
 
                             <div class="cases-card-date--number">
-                                01
+                                04
                             </div>
 
                             <div class="cases-card-date--year">
@@ -603,11 +833,11 @@
                         <div class="cases-card-content">
 
                             <div class="cases-card-content--title">
-                                Market entry
+                                Market entry & strategy 
                             </div>
 
                             <div class="cases-card-content--text">
-                                Metaverse quest project: Market entry into the CIS.
+                                Market entry and product development strategy for the crypto segment of AI avatars Metaverse project.
                             </div>
 
                         </div>
@@ -617,7 +847,7 @@
                         <div class="cases-card-date">
 
                             <div class="cases-card-date--number">
-                                01
+                                05
                             </div>
 
                             <div class="cases-card-date--year">
@@ -637,11 +867,11 @@
                         <div class="cases-card-content">
 
                             <div class="cases-card-content--title">
-                                Market entry
+                                Syndicate creation
                             </div>
 
                             <div class="cases-card-content--text">
-                                Metaverse quest project: Market entry into the CIS.
+                                Setting up a syndicate and handling OTC deals for a financial service provider. 
                             </div>
 
                         </div>
@@ -651,7 +881,7 @@
                         <div class="cases-card-date">
 
                             <div class="cases-card-date--number">
-                                01
+                                06
                             </div>
 
                             <div class="cases-card-date--year">
@@ -702,7 +932,9 @@
             <div class="business-white-wrapper">
 
                 <!-- карточка белая -->
-                <div class="business-white-card">
+                <div class="business-white-card business-card-relative">
+
+                    <img src="/public/assets/img/icons/coins2.png" class="coins-image coins-image-2" alt="">
 
                     <div class="business-white-card--title">$2.528.100.889.651</div>
                     <div class="business-white-card--text">
@@ -715,6 +947,9 @@
 
                 <!-- карточка белая -->
                 <div class="business-white-card business-white-card--secondary">
+
+                    <img src="/public/assets/img/icons/coins1.png" class="coins-image coins-image-1" alt="">
+                    <img src="/public/assets/img/icons/coins3.png" class="coins-image coins-image-3" alt="">
 
                     <div class="business-white-card--title">800%</div>
                     <div class="business-white-card--text">
@@ -746,7 +981,7 @@
 
                     <div class="business-card-content">
                         <div class="business-card-content--title">&gt;300M</div>
-                        <div class="business-card-content--text">users involved in crypto</div>
+                        <div class="business-card-content--text">users involved <br class="kek"> in crypto</div>
                     </div>
 
                     <img src="./public/assets/img/icons/people.svg" alt="">
@@ -759,7 +994,7 @@
 
                     <div class="business-card-content">
                         <div class="business-card-content--title">&gt;$20B</div>
-                        <div class="business-card-content--text">Raised by blockchain startups <br> in Q1 of 2024</div>
+                        <div class="business-card-content--text">Raised by blockchain startups <br class="lol"> in Q1 of 2024</div>
                     </div>
 
                 </div>
@@ -774,7 +1009,7 @@
 
 
     <!-- Партнеры -->
-    <div class="full-page full-page-partners">
+    <div class="full-page full-page-partners" id = "partnersLink">
         <div class="partners-wrapper">
 
             <!-- Заголовок компонента -->
@@ -785,80 +1020,84 @@
 
             <!-- Круглые карточки -->
             <div class="swiper roundCardsSwiper">
+
+                <div class="blur blur-left"></div>
+                <div class="blur blur-right"></div>
+
                 <div class="swiper-wrapper partners-round-cards-wrapper">
 
                     <!-- круглая карточка -->
-                    <a href="#" class="swiper-slide partners-round-card">
+                    <a href="https://zerion.io/?roistat_visit=1219717" class="swiper-slide partners-round-card">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/partners/1.svg" alt=""
                             srcset="">
                     </a>
                     <!-- END круглая карточка -->
 
                     <!-- круглая карточка -->
-                    <a href="#" class="swiper-slide partners-round-card">
+                    <a href="https://www.bnbchain.org/en?roistat_visit=1219717" class="swiper-slide partners-round-card">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/partners/2.svg" alt=""
                             srcset="">
                     </a>
                     <!-- END круглая карточка -->
 
                     <!-- круглая карточка -->
-                    <a href="#" class="swiper-slide partners-round-card">
+                    <a href="https://everscale.network/?roistat_visit=1219717" class="swiper-slide partners-round-card">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/partners/3.svg" alt=""
                             srcset="">
                     </a>
                     <!-- END круглая карточка -->
 
                     <!-- круглая карточка -->
-                    <a href="#" class="swiper-slide partners-round-card">
+                    <a href="https://codenrock.com/?roistat_visit=1219717#/" class="swiper-slide partners-round-card">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/partners/4.svg" alt=""
                             srcset="">
                     </a>
                     <!-- END круглая карточка -->
 
                     <!-- круглая карточка -->
-                    <a href="#" class="swiper-slide partners-round-card">
+                    <a href="https://ceramic.network" class="swiper-slide partners-round-card">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/partners/5.svg" alt=""
                             srcset="">
                     </a>
                     <!-- END круглая карточка -->
 
                     <!-- круглая карточка -->
-                    <a href="#" class="swiper-slide partners-round-card">
+                    <a href="https://solana.com/" class="swiper-slide partners-round-card">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/partners/7.svg" alt=""
                             srcset="">
                     </a>
                     <!-- END круглая карточка -->
 
                     <!-- круглая карточка -->
-                    <a href="#" class="swiper-slide partners-round-card">
+                    <a href="https://coinspaid.com/" class="swiper-slide partners-round-card">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/partners/8.svg" alt=""
                             srcset="">
                     </a>
                     <!-- END круглая карточка -->
 
                     <!-- круглая карточка -->
-                    <a href="#" class="swiper-slide partners-round-card">
-                        <img class="partners-round-card--img" src="./public/assets/img/icons/partners/9.png" alt=""
+                    <a href="https://vk.com/nft" class="swiper-slide partners-round-card">
+                        <img class="partners-round-card--img" src="./public/assets/img/icons/partners/9.svg" alt=""
                             srcset="">
                     </a>
                     <!-- END круглая карточка -->
 
                     <!-- круглая карточка -->
-                    <a href="#" class="swiper-slide partners-round-card">
+                    <a href="https://1inch.io/" class="swiper-slide partners-round-card">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/partners/10.svg" alt=""
                             srcset="">
                     </a>
                     <!-- END круглая карточка -->
 
                     <!-- круглая карточка -->
-                    <a href="#" class="swiper-slide partners-round-card">
+                    <a href="https://rarible.com/" class="swiper-slide partners-round-card">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/partners/11.svg" alt=""
                             srcset="">
                     </a>
                     <!-- END круглая карточка -->
 
                     <!-- круглая карточка -->
-                    <a href="#" class="swiper-slide partners-round-card">
+                    <a href="https://mercuryo.io/" class="swiper-slide partners-round-card">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/partners/12.svg" alt=""
                             srcset="">
                     </a>
@@ -876,40 +1115,43 @@
 
             <!-- Квадратные карточки -->
             <div class="swiper roundCardsSwiperReversed">
+                <div class="blur blur-left"></div>
+                <div class="blur blur-right"></div>
+
                 <div class="swiper-wrapper partners-round-cards-wrapper">
 
                     <!-- квадратная карточка -->
-                    <a href="#" class="partners-round-card partners-squire-card swiper-slide">
+                    <a href="https://www.decentralpark.io/" class="partners-round-card partners-squire-card swiper-slide">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/funds/s1.svg" alt="">
                     </a>
                     <!-- END квадратная карточка -->
 
                     <!-- квадратная карточка -->
-                    <a href="#" class="partners-round-card partners-squire-card swiper-slide">
+                    <a href="https://bitscale.vc/?roistat_visit=1219717" class="partners-round-card partners-squire-card swiper-slide">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/funds/s2.svg" alt="">
                     </a>
                     <!-- END квадратная карточка -->
 
                     <!-- квадратная карточка -->
-                    <a href="#" class="partners-round-card partners-squire-card swiper-slide">
+                    <a href="https://www.lan-dao.xyz/" class="partners-round-card partners-squire-card swiper-slide">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/funds/s3.svg" alt="">
                     </a>
                     <!-- END квадратная карточка -->
 
                     <!-- квадратная карточка -->
-                    <a href="#" class="partners-round-card partners-squire-card swiper-slide">
+                    <a href="https://br.capital/?roistat_visit=1219717" class="partners-round-card partners-squire-card swiper-slide">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/funds/s4.svg" alt="">
                     </a>
                     <!-- END квадратная карточка -->
 
                     <!-- квадратная карточка -->
-                    <a href="#" class="partners-round-card partners-squire-card swiper-slide">
+                    <a href="https://polymorphic.capital/?roistat_visit=1219717" class="partners-round-card partners-squire-card swiper-slide">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/funds/s5.svg" alt="">
                     </a>
                     <!-- END квадратная карточка -->
 
                     <!-- квадратная карточка -->
-                    <a href="#" class="partners-round-card partners-squire-card swiper-slide">
+                    <a href="https://www.tenzor.capital/?roistat_visit=1219717" class="partners-round-card partners-squire-card swiper-slide">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/funds/s6.svg" alt="">
                     </a>
                     <!-- END квадратная карточка -->
@@ -921,25 +1163,25 @@
                     <!-- END квадратная карточка -->
 
                     <!-- квадратная карточка -->
-                    <a href="#" class="partners-round-card partners-squire-card swiper-slide">
+                    <a href="https://www.sanctor.com/?roistat_visit=1219717%5C" class="partners-round-card partners-squire-card swiper-slide">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/funds/s8.svg" alt="">
                     </a>
                     <!-- END квадратная карточка -->
 
                     <!-- квадратная карточка -->
-                    <a href="#" class="partners-round-card partners-squire-card swiper-slide">
+                    <a href="https://www.decentralpark.io/" class="partners-round-card partners-squire-card swiper-slide">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/funds/s1.svg" alt="">
                     </a>
                     <!-- END квадратная карточка -->
 
                     <!-- квадратная карточка -->
-                    <a href="#" class="partners-round-card partners-squire-card swiper-slide">
+                    <a href="https://bitscale.vc/?roistat_visit=1219717" class="partners-round-card partners-squire-card swiper-slide">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/funds/s2.svg" alt="">
                     </a>
                     <!-- END квадратная карточка -->
 
                     <!-- квадратная карточка -->
-                    <a href="#" class="partners-round-card partners-squire-card swiper-slide">
+                    <a href="https://www.lan-dao.xyz/" class="partners-round-card partners-squire-card swiper-slide">
                         <img class="partners-round-card--img" src="./public/assets/img/icons/funds/s3.svg" alt="">
                     </a>
                     <!-- END квадратная карточка -->
@@ -955,7 +1197,7 @@
     </div>
     <!-- END Партнеры -->
 
-    <div class="page-wrapper">
+    <div class="page-wrapper" id="teamLink">
 
         <!-- Команда -->
         <div class="team-wrapper page-component" id="knifed">
@@ -979,9 +1221,18 @@
                             Vladimir Smerkis
                         </div>
                         <div class="team-card-content--text">
-                            Definition Labs Co-founder & GP <br>
-                            Co-founder Blum.io <br>
-                            Ex GM Binance CIS <br>
+                            <div>
+                                <img src="/public/assets/img/icons/BLACK_TOCHAMBA.svg" alt="">
+                                Definition Labs Co-founder & GP
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/BLACK_TOCHAMBA.svg" alt="">
+                                Co-founder Blum.io 
+                            </div>
+                            <div>
+                                <img src="/public/assets/img/icons/BLACK_TOCHAMBA.svg" alt="">
+                                Ex GM Binance CIS 
+                            </div>
                         </div>
                     </div>
 
@@ -998,7 +1249,10 @@
                             Taras Abrosenko
                         </div>
                         <div class="team-card-content--text">
-                            Definition Labs Co-founder & CEO
+                            <div>
+                                <img src="/public/assets/img/icons/BLACK_TOCHAMBA.svg" alt="">
+                                Definition Labs Co-founder & CEO
+                            </div>
                         </div>
                     </div>
 
@@ -1015,7 +1269,11 @@
                             Yegor Glazkov
                         </div>
                         <div class="team-card-content--text">
-                            Definition Labs COO
+                            <div>
+                                <img src="/public/assets/img/icons/BLACK_TOCHAMBA.svg" alt="">
+                                Definition Labs COO
+                            </div>
+                            
                         </div>
                     </div>
 
@@ -1043,7 +1301,7 @@
                 <!-- карточка участника -->
                 <div class="member-card">
 
-                    <img class="member-card-img" src="./public/assets/img/avatars/members/igor.png" alt="">
+                    <img class="member-card-img" src="./public/assets/img/avatars/faces/1.png" alt="">
 
                     <div class="team-card-content">
                         <div class="team-card-content--title">
@@ -1060,14 +1318,14 @@
                 <!-- карточка участника -->
                 <div class="member-card">
 
-                    <img class="member-card-img" src="./public/assets/img/avatars/members/igor.png" alt="">
+                    <img class="member-card-img" src="./public/assets/img/avatars/faces/2.jpeg" alt="">
 
                     <div class="team-card-content">
                         <div class="team-card-content--title">
-                            Igor Doganov
+                            Vladislav Martynov
                         </div>
                         <div class="team-card-content--text">
-                            Investments Director Stoic Blockchain Fund
+                            Ex Ethereum Foundation
                         </div>
                     </div>
 
@@ -1077,14 +1335,14 @@
                 <!-- карточка участника -->
                 <div class="member-card">
 
-                    <img class="member-card-img" src="./public/assets/img/avatars/members/igor.png" alt="">
+                    <img class="member-card-img" src="./public/assets/img/avatars/faces/3.jpeg" alt="">
 
                     <div class="team-card-content">
                         <div class="team-card-content--title">
-                            Igor Doganov
+                            Gleb Kostarev
                         </div>
                         <div class="team-card-content--text">
-                            Investments Director Stoic Blockchain Fund
+                            Ex VP Binance
                         </div>
                     </div>
 
@@ -1094,14 +1352,219 @@
                 <!-- карточка участника -->
                 <div class="member-card">
 
-                    <img class="member-card-img" src="./public/assets/img/avatars/members/igor.png" alt="">
+                    <img class="member-card-img" src="./public/assets/img/avatars/faces/4.jpeg" alt="">
 
                     <div class="team-card-content">
                         <div class="team-card-content--title">
-                            Igor Doganov
+                            Nikita Balashov
                         </div>
                         <div class="team-card-content--text">
-                            Investments Director Stoic Blockchain Fund
+                            Founder RoiRate Agency
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END карточка участника -->
+
+                <!-- карточка участника -->
+                <div class="member-card member-card--closed">
+
+                    <img class="member-card-img" src="./public/assets/img/avatars/faces/5.png" alt="">
+
+                    <div class="team-card-content">
+                        <div class="team-card-content--title">
+                            Andrey Kutin
+                        </div>
+                        <div class="team-card-content--text">
+                            Match Systems founder
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END карточка участника -->
+
+                <!-- карточка участника -->
+                <div class="member-card member-card--closed">
+
+                    <img class="member-card-img" src="./public/assets/img/avatars/faces/6.png" alt="">
+
+                    <div class="team-card-content">
+                        <div class="team-card-content--title">
+                            Daria Barkova
+                        </div>
+                        <div class="team-card-content--text">
+                            UnicornSearch founder
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END карточка участника -->
+
+                <!-- карточка участника -->
+                <div class="member-card member-card--closed">
+
+                    <img class="member-card-img" src="./public/assets/img/avatars/faces/7.png" alt="">
+
+                    <div class="team-card-content">
+                        <div class="team-card-content--title">
+                            Ivan Klykov
+                        </div>
+                        <div class="team-card-content--text">
+                            Family Office investment director
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END карточка участника -->
+
+                <!-- карточка участника -->
+                <div class="member-card member-card--closed">
+
+                    <img class="member-card-img" src="./public/assets/img/avatars/faces/8.png" alt="">
+
+                    <div class="team-card-content">
+                        <div class="team-card-content--title">
+                            Michael Jerlis
+                        </div>
+                        <div class="team-card-content--text">
+                            EMCD founder & CEO
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END карточка участника -->
+
+
+                <!-- карточка участника -->
+                <div class="member-card member-card--closed">
+
+                    <img class="member-card-img" src="./public/assets/img/avatars/faces/9.png" alt="">
+
+                    <div class="team-card-content">
+                        <div class="team-card-content--title">
+                            Denis Smirnov
+                        </div>
+                        <div class="team-card-content--text">
+                            DAO/DeFi Consultant, Cryptocurrency Researcher
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END карточка участника -->
+
+                <!-- карточка участника -->
+                <div class="member-card member-card--closed">
+
+                    <img class="member-card-img" src="./public/assets/img/avatars/faces/10.png" alt="">
+
+                    <div class="team-card-content">
+                        <div class="team-card-content--title">
+                            Alexander Kuzin
+                        </div>
+                        <div class="team-card-content--text">
+                            Genesis member at Envelop
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END карточка участника -->
+
+                <!-- карточка участника -->
+                <div class="member-card member-card--closed">
+
+                    <img class="member-card-img" src="./public/assets/img/avatars/faces/11.png" alt="">
+
+                    <div class="team-card-content">
+                        <div class="team-card-content--title">
+                            Vladimir Maslyakov
+                        </div>
+                        <div class="team-card-content--text">
+                            Ex. CTO at Exante, Everscale
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END карточка участника -->
+
+                <!-- карточка участника -->
+                <div class="member-card member-card--closed">
+
+                    <img class="member-card-img" src="./public/assets/img/avatars/faces/12.png" alt="">
+
+                    <div class="team-card-content">
+                        <div class="team-card-content--title">
+                            Vladimir Gorgadze
+                        </div>
+                        <div class="team-card-content--text">
+                            Atomyze co-founder
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END карточка участника -->
+
+                <!-- карточка участника -->
+                <div class="member-card member-card--closed">
+
+                    <img class="member-card-img" src="./public/assets/img/avatars/faces/13.png" alt="">
+
+                    <div class="team-card-content">
+                        <div class="team-card-content--title">
+                            Viktor Frumkin
+                        </div>
+                        <div class="team-card-content--text">
+                            Archimed Capital MP & Decentral Park Capital FP
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END карточка участника -->
+
+                <!-- карточка участника -->
+                <div class="member-card member-card--closed">
+
+                    <img class="member-card-img" src="./public/assets/img/avatars/faces/14.jpeg" alt="">
+
+                    <div class="team-card-content">
+                        <div class="team-card-content--title">
+                            Vadim Koleoshkin
+                        </div>
+                        <div class="team-card-content--text">
+                            Co-founder Zerion Wallet
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END карточка участника -->
+
+                <!-- карточка участника -->
+                <div class="member-card member-card--closed">
+
+                    <img class="member-card-img" src="./public/assets/img/avatars/faces/15.png" alt="">
+
+                    <div class="team-card-content">
+                        <div class="team-card-content--title">
+                            Alexander Makogon
+                        </div>
+                        <div class="team-card-content--text">
+                            Founder Hardcore Labs
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END карточка участника -->
+
+                <!-- карточка участника -->
+                <div class="member-card member-card--closed">
+
+                    <img class="member-card-img" src="./public/assets/img/avatars/faces/16.png" alt="">
+
+                    <div class="team-card-content">
+                        <div class="team-card-content--title">
+                            Anton Toroptcev
+                        </div>
+                        <div class="team-card-content--text">
+                            GM Commex
                         </div>
                     </div>
 
@@ -1111,202 +1574,7 @@
             </div>
             <!-- END карточки участников открытые -->
 
-            <!-- карточки участников закрытые -->
-            <div class="member-cards-wrapper member-cards-wrapper--closed">
-
-                <!-- карточка участника -->
-                <div class="member-card">
-
-                    <img class="member-card-img" src="./public/assets/img/avatars/members/igor.png" alt="">
-
-                    <div class="team-card-content">
-                        <div class="team-card-content--title">
-                            Igor Doganov
-                        </div>
-                        <div class="team-card-content--text">
-                            Investments Director Stoic Blockchain Fund
-                        </div>
-                    </div>
-
-                </div>
-                <!-- END карточка участника -->
-
-                <!-- карточка участника -->
-                <div class="member-card">
-
-                    <img class="member-card-img" src="./public/assets/img/avatars/members/igor.png" alt="">
-
-                    <div class="team-card-content">
-                        <div class="team-card-content--title">
-                            Igor Doganov
-                        </div>
-                        <div class="team-card-content--text">
-                            Investments Director Stoic Blockchain Fund
-                        </div>
-                    </div>
-
-                </div>
-                <!-- END карточка участника -->
-
-                <!-- карточка участника -->
-                <div class="member-card">
-
-                    <img class="member-card-img" src="./public/assets/img/avatars/members/igor.png" alt="">
-
-                    <div class="team-card-content">
-                        <div class="team-card-content--title">
-                            Igor Doganov
-                        </div>
-                        <div class="team-card-content--text">
-                            Investments Director Stoic Blockchain Fund
-                        </div>
-                    </div>
-
-                </div>
-                <!-- END карточка участника -->
-
-                <!-- карточка участника -->
-                <div class="member-card">
-
-                    <img class="member-card-img" src="./public/assets/img/avatars/members/igor.png" alt="">
-
-                    <div class="team-card-content">
-                        <div class="team-card-content--title">
-                            Igor Doganov
-                        </div>
-                        <div class="team-card-content--text">
-                            Investments Director Stoic Blockchain Fund
-                        </div>
-                    </div>
-
-                </div>
-                <!-- END карточка участника -->
-
-                <!-- карточка участника -->
-                <div class="member-card">
-
-                    <img class="member-card-img" src="./public/assets/img/avatars/members/igor.png" alt="">
-
-                    <div class="team-card-content">
-                        <div class="team-card-content--title">
-                            Igor Doganov
-                        </div>
-                        <div class="team-card-content--text">
-                            Investments Director Stoic Blockchain Fund
-                        </div>
-                    </div>
-
-                </div>
-                <!-- END карточка участника -->
-
-                <!-- карточка участника -->
-                <div class="member-card">
-
-                    <img class="member-card-img" src="./public/assets/img/avatars/members/igor.png" alt="">
-
-                    <div class="team-card-content">
-                        <div class="team-card-content--title">
-                            Igor Doganov
-                        </div>
-                        <div class="team-card-content--text">
-                            Investments Director Stoic Blockchain Fund
-                        </div>
-                    </div>
-
-                </div>
-                <!-- END карточка участника -->
-
-                <!-- карточка участника -->
-                <div class="member-card">
-
-                    <img class="member-card-img" src="./public/assets/img/avatars/members/igor.png" alt="">
-
-                    <div class="team-card-content">
-                        <div class="team-card-content--title">
-                            Igor Doganov
-                        </div>
-                        <div class="team-card-content--text">
-                            Investments Director Stoic Blockchain Fund
-                        </div>
-                    </div>
-
-                </div>
-                <!-- END карточка участника -->
-
-                <!-- карточка участника -->
-                <div class="member-card">
-
-                    <img class="member-card-img" src="./public/assets/img/avatars/members/igor.png" alt="">
-
-                    <div class="team-card-content">
-                        <div class="team-card-content--title">
-                            Igor Doganov
-                        </div>
-                        <div class="team-card-content--text">
-                            Investments Director Stoic Blockchain Fund
-                        </div>
-                    </div>
-
-                </div>
-                <!-- END карточка участника -->
-
-
-
-                <!-- карточка участника -->
-                <div class="member-card">
-
-                    <img class="member-card-img" src="./public/assets/img/avatars/members/igor.png" alt="">
-
-                    <div class="team-card-content">
-                        <div class="team-card-content--title">
-                            Igor Doganov
-                        </div>
-                        <div class="team-card-content--text">
-                            Investments Director Stoic Blockchain Fund
-                        </div>
-                    </div>
-
-                </div>
-                <!-- END карточка участника -->
-
-                <!-- карточка участника -->
-                <div class="member-card">
-
-                    <img class="member-card-img" src="./public/assets/img/avatars/members/igor.png" alt="">
-
-                    <div class="team-card-content">
-                        <div class="team-card-content--title">
-                            Igor Doganov
-                        </div>
-                        <div class="team-card-content--text">
-                            Investments Director Stoic Blockchain Fund
-                        </div>
-                    </div>
-
-                </div>
-                <!-- END карточка участника -->
-
-                <!-- карточка участника -->
-                <div class="member-card">
-
-                    <img class="member-card-img" src="./public/assets/img/avatars/members/igor.png" alt="">
-
-                    <div class="team-card-content">
-                        <div class="team-card-content--title">
-                            Igor Doganov
-                        </div>
-                        <div class="team-card-content--text">
-                            Investments Director Stoic Blockchain Fund
-                        </div>
-                    </div>
-
-                </div>
-                <!-- END карточка участника -->
-
-            </div>
-            <!-- END карточки участников закрытые -->
-
-            <div class="show-members-button" class = "mobile-killed">
+            <div class="show-members-button" class="mobile-killed">
                 View all members
             </div>
 
@@ -1321,7 +1589,7 @@
     <!-- END Страница обертка -->
 
 
-    <div class="full-page full-page-footer">
+    <div class="full-page full-page-footer" id = "conactsLink">
         <!-- Футер -->
         <div class="footer-wrapper ">
 
@@ -1348,7 +1616,7 @@
                 <div class="contact-element">
 
                     <div class="contact-element-text">Calendly</div>
-                    <a href="#" class="contact-element-link">
+                    <a href="https://t.me/tarasabrosenko" class="contact-element-link">
                         <img src="./public/assets/img/icons/link_arrow.svg" alt="">
                         Schedule a call
                     </a>
@@ -1358,9 +1626,11 @@
 
                 <!-- один контакт -->
                 <div class="contact-element">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs" class="chad"><img src="/public/assets/img/icons/chad.svg"  alt=""></a>
+                    
 
                     <div class="contact-element-text">Telegram</div>
-                    <a href="#" class="contact-element-link">
+                    <a href="https://t.me/tarasabrosenko" class="contact-element-link">
                         <img src="./public/assets/img/icons/link_arrow.svg" alt="">
                         Open chat
                     </a>
@@ -1383,9 +1653,10 @@
 
         <div class="popup">
 
+            <img class="popup-close" src="./public/assets/img/icons/close.svg" alt="">
+
             <div class="popup-title">
                 Submit your application
-                <img class="popup-close" src="./public/assets/img/icons/close.svg" alt="">
             </div>
 
             <!-- Попап форма-->
@@ -1404,6 +1675,11 @@
                 <div class="popup-form-tag">
                     <div class="popup-form-tag--title">Type of business*</div>
                     <input class="popup-form-tag--input" type="text" id="form-type" placeholder="Jake Jakson" />
+                </div>
+
+                <div class="popup-form-tag">
+                    <div class="popup-form-tag--title">Telegram @tag</div>
+                    <input class="popup-form-tag--input" type="text" id="form-tag" placeholder="@jackson" />
                 </div>
 
                 <div class="popup-form-tag">
@@ -1470,7 +1746,7 @@
             document.querySelector('.team-wrapper').classList.add('swiper')
             document.querySelector('.team-cards-wrapper').classList.add('swiper-wrapper')
             document.querySelector('.team-cards-wrapper').classList.remove('team-cards-wrapper')
-            for(let elm of document.querySelectorAll('.team-card')){
+            for (let elm of document.querySelectorAll('.team-card')) {
                 elm.classList.add('swiper-slide')
             }
 
@@ -1484,7 +1760,7 @@
             document.querySelector('.member-wrapper').classList.add('swiper')
             document.querySelector('.member-cards-wrapper').classList.add('swiper-wrapper')
             document.querySelector('.member-cards-wrapper').classList.remove('member-cards-wrapper')
-            for(let elm of document.querySelectorAll('.member-card')){
+            for (let elm of document.querySelectorAll('.member-card')) {
                 elm.classList.add('swiper-slide')
             }
 
@@ -1505,31 +1781,62 @@
                 },
             });
 
-            
+            // проверка вьюпорта для cases
+
+            let casesWrapper = document.querySelector('.cases-wrapper')
+
+            let previousTimeStamp = 0
+            var lastScrollTop = 0;
+
+            document.addEventListener('scroll', (event) => {
+                console.log(123)
+                var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+                if (st > lastScrollTop) {
+                    // downscroll code
+                    if (casesWrapper.getBoundingClientRect().y < 110) {
+                    if (event.timeStamp - previousTimeStamp > 500) {
+                        swiper.slideNext()
+                        previousTimeStamp = event.timeStamp
+                    }
+                }
+                } else if (st < lastScrollTop) {
+                    // upscroll code
+                    if (casesWrapper.getBoundingClientRect().y < 110) {
+                    if (event.timeStamp - previousTimeStamp > 500) {
+                        swiper.slidePrev()
+                        previousTimeStamp = event.timeStamp
+                    }
+                }
+                } // else was horizontal scroll
+                lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+                
+                
+            })
+
         }
 
         // везде
 
         var swiperRoundCards = new Swiper(".roundCardsSwiper", {
-                slidesPerView: "auto",
-                spaceBetween: 20,
-                loop: true,
-                autoplay: {
-                    delay: 800,
-                    pauseOnMouseEnter: true
-                },
-            });
+            slidesPerView: "auto",
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 800,
+                pauseOnMouseEnter: true
+            },
+        });
 
-            var swiperRoundCardsReversed = new Swiper(".roundCardsSwiperReversed", {
-                slidesPerView: "auto",
-                spaceBetween: 20,
-                loop: true,
-                autoplay: {
-                    delay: 800,
-                    pauseOnMouseEnter: true,
-                    reverseDirection: true
-                },
-            });
+        var swiperRoundCardsReversed = new Swiper(".roundCardsSwiperReversed", {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 800,
+                pauseOnMouseEnter: true,
+                reverseDirection: true
+            },
+        });
 
 
     </script>
