@@ -1539,6 +1539,7 @@ html.no-scroll {
     .ecosystem-card-content--text {
         font-size: 14px;
         line-height: 22.4px;
+        height: 110px !important;
     }
 
     .ecosystem-card-anonce {
